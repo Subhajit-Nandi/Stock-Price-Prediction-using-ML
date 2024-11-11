@@ -25,7 +25,7 @@ st.subheader("Stock Data")
 st.write(google_data)
 
 splitting_len=int(len(google_data)*0.7)
-x_test = pd.DataFrame(google_data.Close[splitting_len:])
+x_test = pd.DataFrame(google_data['Close'][splitting_len:])
 
 def plot_graph(figsize,values,full_data,extra_data = 0,extra_dataset = None):
     fig = plt.figure(figsize=figsize)
