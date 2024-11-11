@@ -54,7 +54,7 @@ st.pyplot(plot_graph((15,6),google_data['MA_for_100_days'],google_data,1,google_
 
 
 scaler = MinMaxScaler(feature_range=(0,1))
-scaled_data = scaler.fit_transform(x_test[['Close']])
+scaled_data = scaler.fit_transform(x_test)
 
 x_data = []
 y_data = []
